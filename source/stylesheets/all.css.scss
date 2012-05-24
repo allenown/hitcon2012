@@ -24,7 +24,7 @@ body {
 #hd {
   position: relative;
   z-index: 10;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   float: none;
 }
@@ -93,8 +93,12 @@ body {
   text-shadow: 0 0 .1em rgba(211, 59, 58,.9), 0 0 .06em rgba(211, 59, 58,.9);
   color: rgba(211, 59, 58,.3);
   letter-spacing: .08em;
-  margin-left: .09em;
   span {
     display: block;
   }
+}
+
+.ct10 {
+  @include leader(2,50px);
+  @include adjust-font-size-to(50px, 4);
 }
